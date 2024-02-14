@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.paw.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.paw.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment2_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.paw.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" />
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        android:name="com.example.paw.BottomNavigationFragment"
+        android:label="fragment_bottom_navigation"
+        tools:layout="@layout/fragment_bottom_navigation" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.paw.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/petProfileFragment"
+        android:name="com.example.paw.PetProfileFragment"
+        android:label="fragment_pet_profile"
+        tools:layout="@layout/fragment_pet_profile" />
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.paw.RequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_pet_info" />
+    <fragment
+        android:id="@+id/allViewFragment"
+        android:name="com.example.paw.AllViewFragment"
+        android:label="fragment_all_view"
+        tools:layout="@layout/fragment_all_view" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.paw.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/profileViewFragment"
+        android:name="com.example.paw.ProfileViewFragment"
+        android:label="fragment_profile_view"
+        tools:layout="@layout/fragment_profile_view" />
+</navigation>

@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PAWS" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/newPrimaryDarkGreen</item>
+        <item name="colorPrimaryVariant">@color/newPrimaryDarkGreen</item>
+        <item name="android:statusBarColor" tools:targetApi="l"> ?attr/colorPrimaryVariant</item>
+
+        <item name="android:fontFamily">@font/font_riotprotect</item>
+
+    </style>
+
+    <style name="ButtonWhite">
+        <item name="android:textColor">@color/midgreen</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shape">rectangle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Theme.PAWS" parent="Base.Theme.PAWS" />
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/midgreen</item>
+    </style>
+
+    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView" >
+        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
+    </style>
+    <style name="custom_card_view" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">70dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.RecyclerKotlin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/midgreen</item>
+        <item name="colorPrimaryVariant">@color/newPrimaryDarkGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/midgreen</item>
+        <item name="colorSecondaryVariant">@color/newPrimaryDarkGreen</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
